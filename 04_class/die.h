@@ -6,3 +6,12 @@ public function roll that returns an int
 
 private int sides with a value of 6
 */
+
+class Die
+{
+public:
+	int roll();
+
+private:
+	int sides{ 6 };
+};

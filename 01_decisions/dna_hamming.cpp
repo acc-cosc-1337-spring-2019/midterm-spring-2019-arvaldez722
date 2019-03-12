@@ -13,3 +13,19 @@ int distance = get_dna_hamming_distance("GAGCCTACTAACGGGAT", "CATCGTAATGACGGCCT"
 distance will be 7
 
 */
+
+int get_dna_hamming_distance(const std::string& dna1, const std::string& dna2)
+{
+	int distance = 0;
+
+	for (char& c1 : dna1;)
+	{
+		do
+		{
+
+
+		}while (c1 == dna2[i])
+		
+	}
+	return 0;
+}
