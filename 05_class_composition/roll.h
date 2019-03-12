@@ -1,5 +1,6 @@
 //Roll class interface 
 #include<string>
+#include "die.h"
 class Roll
 {
 public:
