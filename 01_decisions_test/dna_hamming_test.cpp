@@ -11,7 +11,10 @@ TEST_CASE("Test configuration setup")
 
 TEST_CASE("Dna Hamming Test")
 {
-	REQUIRE()
+	REQUIRE(get_dna_hamming_distance("AGCTATAG", "AGCTATAG") == 0);
+	REQUIRE(get_dna_hamming_distance("AGCTATAG", "AGCTTTAG") == 1);
+	REQUIRE(get_dna_hamming_distance("AGCTATAG", "CAGTATAG") == 3);
+	REQUIRE(get_dna_hamming_distance("AGCTATAG", "GAGCTACC") == 8);
 }
 /*
 

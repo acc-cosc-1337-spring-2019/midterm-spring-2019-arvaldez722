@@ -9,7 +9,7 @@ Create test cases in 08_class_copy_test.
 int main() 
 {
 	Die instance;
-	instance.roll();
+	Die instance2 = instance;
 
 	
 	return 0;
