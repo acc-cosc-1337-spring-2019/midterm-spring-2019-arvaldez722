@@ -1,3 +1,6 @@
+#ifndef ROLL_O_H
+#define ROLL_O_H
+
 //class interface
 #include<string>
 #include "die.h"
@@ -5,8 +8,7 @@ class Roll
 {
 public:
 	Roll();
-
-	Roll(Die& d1, Die& d2);
+	//Roll(Die& d1, Die& d2);
 	void roll(Die& d1, Die& d2);
 	std::string result();
 	int value_1();
@@ -21,3 +23,5 @@ private:
 	bool craps();
 	bool natural()
 };
+
+#endif // !ROLL_O_H

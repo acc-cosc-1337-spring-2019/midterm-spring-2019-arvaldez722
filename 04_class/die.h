@@ -19,7 +19,7 @@ public:
 
 private:
 	int roll_value();
-	int sides = 6;
+	int sides{ 6 };
 };
 
 #endif 

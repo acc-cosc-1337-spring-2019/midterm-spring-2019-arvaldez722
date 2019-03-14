@@ -1,16 +1,24 @@
 #include"dna_consensus.h"
+#include<string>
 
 std::vector<string> dna_string()
 {
-	return std::vector<string>();
+	dna_string.push_back("ATCCAGCT");
+	dna_string.push_back("GGGCAACT");
+	dna_string.push_back("ATGGATCT");
+	dna_string.push_back("AAGCAACC");
+	dna_string.push_back("AAGCAACC");
+	dna_string.push_back("AAGCAACC");
+	dna_string.push_back("ATGGCACT");
 }
 
 bool check_element()
 {
-	return false;
+	
 }
 
 std::string get_consensus()
 {
-	return std::string();
+	int i = 0;
+	for (char c : 
 }
