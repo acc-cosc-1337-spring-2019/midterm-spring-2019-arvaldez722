@@ -1,5 +1,6 @@
 //write include statement
 #include "fibonacci.h"
+#include<iostream>
 
 
 /*
@@ -15,10 +16,10 @@ int main()
 		std::cout << "Enter the number of terms you want: " << "\n";
 		std::cin >> stop_num;
 
-		std::cout << "The Fibonacci Sequence up to " << stop_num << "term is: \n" << get_fibonacci;
+		std::cout << "The Fibonacci Sequence up to " << stop_num << "term is: \n" << get_fibonacci(stop_num);
 
-		std::cout << "To continue, Enter: y";choice
-		std::cin 
+		std::cout << "To continue, Enter: y";
+		std::cin >> choice;
 	} while (choice == 'y' || 'Y');
 	
 	return 0;

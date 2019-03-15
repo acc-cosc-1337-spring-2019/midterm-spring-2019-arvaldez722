@@ -1,12 +1,13 @@
 #include <iostream>
 #include "dna_hamming.h"
+#include <string>
 
 int main() 
 { 
 	int choice;
 	char c;
-	char std::string dna1;
-	char std::string dna2
+	std::string dna1;
+	std::string dna2;
 
 		do
 		{ 

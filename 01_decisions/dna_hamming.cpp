@@ -17,7 +17,7 @@ distance will be 7
 */
 
 
-int get_dna_hamming_distance(char std::string& dna1, char std::string& dna2)
+int get_dna_hamming_distance(std::string& dna1,std::string& dna2)
 {
 	int distance = 0; //count is the distance
 	int i = 0;
@@ -28,7 +28,7 @@ int get_dna_hamming_distance(char std::string& dna1, char std::string& dna2)
 		{
 			++distance;
 		}
-		++1
+		++i;
 	}
 
 	return distance;

@@ -1,7 +1,9 @@
 #include"dna_consensus.h"
 #include<string>
+#include <vector>
 
-std::vector<string> dna_string()
+
+std::vector<std::string> dna_string()
 {
 	dna_string.push_back("ATCCAGCT");
 	dna_string.push_back("GGGCAACT");
@@ -10,6 +12,8 @@ std::vector<string> dna_string()
 	dna_string.push_back("AAGCAACC");
 	dna_string.push_back("AAGCAACC");
 	dna_string.push_back("ATGGCACT");
+
+	return std::vector<std::string>();
 }
 
 bool check_element()

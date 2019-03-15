@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-std::vector<string> dna_string();
+std::vector<std::string> dna_string();
 
 bool check_element();
 
