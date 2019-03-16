@@ -18,6 +18,10 @@ int Die::rolled_value() const
 		rolled_value = roll_value
 	return 0;
 }
+	int Die::rolled_value() const
+	{
+		return 0;
+	}
 	int Die::roll_value()
 {
 	rolled_value = roll

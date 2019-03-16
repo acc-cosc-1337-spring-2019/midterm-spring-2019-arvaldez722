@@ -10,6 +10,8 @@ public:
 	//overload<<operator --> vector of rolls
 
 	//overload >> operator --> user input number of shooters & number of vectors of shooters z
+	std::ostream & operator <<(std::ostream & out, )
+	friend std::istream & >> (std::istream &in, )
 private:
 	std::vector<Roll>;
 

@@ -20,7 +20,8 @@ public:
 private:
 	Die& die1 : { };
 	Die& die2 :{};
-	int die_roll_value;
+	int die1_roll_value;
+	int die2_roll_value;
 	bool rolled;
 	bool craps();
 	bool natural()
