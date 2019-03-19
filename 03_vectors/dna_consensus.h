@@ -2,8 +2,11 @@
 #include <vector>
 #include <string>
 
-std::vector<std::string> dna_string();
+void std::vector<std::string> dna_string();
 
 bool check_element();
 
+
+//consensus is the most common symbol at each position
+	//so cycle through each element of the vector and then each element of the string and determine common symbol
 std::string get_consensus();
