@@ -4,5 +4,5 @@ reference parameters that returns an int.
 */
 #include <string>
 
-int get_dna_hamming_distance(std::string& dna1,std::string& dna2);
+int get_dna_hamming_distance(const std::string& dna1, const std::string& dna2);
 
