@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\april\source\repos\midterm-spring-2019-arvaldez722\01_decisions\dna_hamming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\april\source\repos\midterm-spring-2019-arvaldez722\01_decisions\dna_hamming.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\april\source\repos\midterm-spring-2019-arvaldez722\01_decisions\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{75CC77A3-B295-3073-8BEE-9AA0644A057F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{86918C77-9A61-3725-8811-4F74F03C487E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

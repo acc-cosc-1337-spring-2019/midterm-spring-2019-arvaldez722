@@ -6,3 +6,8 @@ TEST_CASE("Test configuration setup")
 {
 	REQUIRE(true == true);
 }
+
+TEST_CASE("Consensus Blah")
+{
+	REQUIRE()
+}
