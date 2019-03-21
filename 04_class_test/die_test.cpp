@@ -14,13 +14,12 @@ Use a loop to roll 10 times and assert that each time value is from 1 to 6.
 */
 TEST_CASE("Test die") 
 {
-//	REQUIRE(roll(7) == false);
-	//REQUIRE(roll(1) == true);
+	Die d;
 
 	for (int i = 0; i < 10; ++i)
 	{
-		roll() <= 6;
+		d.roll();
+		REQUIRE(d.rolled_value() >= 1);
+		REQUIRE(d.rolled_value() <= 6);
 	}
-
-	
 }

@@ -1,7 +1,7 @@
 #ifndef ROLL_H
 #define ROLL_H
 //Roll class interface 
-#include<string>
+#include <string>
 #include "die.h"
 
 class Roll
@@ -15,11 +15,11 @@ public:
 
 	
 private:
-	Die& die1 : { };
-	Die& die2 :{};
-	int die1_roll_value();
-	int die2_rolled_value();
-	bool rolled = false;
+	Die& die1;
+	Die& die2;
+	int die1_rolled_value;
+	int die2_rolled_value;
+	bool rolled;
 	bool craps();
 	bool natural();
 };

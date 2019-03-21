@@ -13,13 +13,14 @@ private int sides with a value of 6
 class Die
 {
 public:
-	int roll();
-
+	Die();
+	Die(int);
+	void roll();
 	int rolled_value() const;
 
 private:
-	int roll_value();
-	int sides{ 6 };
+	int roll_value;
+	int sides;
 };
 
 #endif 

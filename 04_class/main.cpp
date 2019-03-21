@@ -1,23 +1,28 @@
 #include "die.h"
+
+#include <iostream>
+#include <string>
 //Write include statement
 /*
 Program runs until user opts out.
 
 For each loop Roll die and display output
-
 */
 
 int main() 
 {
-	int choice;
+	Die d1;
+
+	char choice;
 	do
 	{
-		std::cout << "You rolled a " << rolled_value();
+		d1.roll();
+		std::cout << "You rolled a " << std::to_string(d1.rolled_value()) << std::endl;
 
-		std::cout << "Roll Die?";
-		std::cin << choice;
+		std::cout << "Roll die again (y/n)? ";
+		std::cin >> choice;
 
-	} while (choice = 'y' || 'Y');
+	} while (choice == 'y' || choice =='Y');
 
 	return 0;
 }

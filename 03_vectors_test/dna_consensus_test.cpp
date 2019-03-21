@@ -9,5 +9,6 @@ TEST_CASE("Test configuration setup")
 
 TEST_CASE("Consensus Blah")
 {
+	std::vector<
 	REQUIRE()
 }

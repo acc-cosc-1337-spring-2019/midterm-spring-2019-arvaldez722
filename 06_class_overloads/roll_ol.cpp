@@ -1,42 +1,66 @@
-//class implementation
-#include "roll.h"
-#indclude "die.h"
+#include "roll_ol.h"
+#include "die.h"
 
 //roll class implementation
+Roll::Roll() : die1(), die2() {
+	die1_rolled_value = 0;
+	die2_rolled_value = 0;
+	rolled = false;
+}
 
-Roll::Roll(Die & d1, Die & d2)
+Roll::Roll(Die& d1, Die& d2) : die1(d1), die2(d2) {
+	die1_rolled_value = 0;
+	die2_rolled_value = 0;
+	rolled = false;
+}
+
+void Roll::roll(Die& d1, Die& d2)
 {
+	die1 = d1;
+	die2 = d2;
+
+	die1.roll();
+	die1_rolled_value = die1.rolled_value();
+
+	die2.roll();
+	die2_rolled_value = die2.rolled_value();
+
+	rolled = true;
 }
 
 void Roll::roll()
 {
-	Die::rolled_value()
-}
+	die1.roll();
+	die1_rolled_value = die1.rolled_value();
 
-std::string result()
-{
-	if (craps == true)
-	{
-		result = "Craps"
-	}
-	else if (natural == true)
-	{
-		result = "Natrual"
-	}
-	else
-	{
-		result = "Points"
-	}
+	die2.roll();
+	die2_rolled_value = die2.rolled_value();
+
+	rolled = true;
 }
 
 std::string Roll::result()
 {
-	if (rolled_value;
+	if (!rolled) {
+		return "Must roll first!";
+	}
+	else if (craps())
+	{
+		return "Craps";
+	}
+	else if (natural())
+	{
+		return "Natrual";
+	}
+	else
+	{
+		return "Points";
+	}
 }
 
 int Roll::value_1()
 {
-	return die1_roll_value;
+	return die1_rolled_value;
 }
 
 int Roll::value_2()
@@ -46,7 +70,7 @@ int Roll::value_2()
 
 bool Roll::craps()
 {
-	if (die1_roll_value + die2_rolled_value = 2 || 3 || 12)
+	if ((die1_rolled_value + die2_rolled_value == 2) || (die1_rolled_value + die2_rolled_value == 3) || (die1_rolled_value + die2_rolled_value == 12))
 	{
 		return true;
 	}
@@ -55,7 +79,7 @@ bool Roll::craps()
 
 bool Roll::natural()
 {
-	if (die1_roll_value + die2_rolled_value = 7 || 11)
+	if ((die1_rolled_value + die2_rolled_value == 7) || (die1_rolled_value + die2_rolled_value == 11))
 	{
 		return true;
 	}
