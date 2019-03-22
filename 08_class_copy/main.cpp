@@ -11,6 +11,16 @@ Create test cases in 08_class_copy_test.
 
 int main() 
 {
+	Die instance;
+
+	Die instance2 = instance;
+	//At this point instance 2 only have the VALUE of instance --> if instance is changed later that's unrelated to instance2
+
+	Die& reference = instance;
+	//Now reference and instance share a memeory address --> so if reference is manipulated so is instance (and vice versa)
+
+
+	/* ~~~Tutor Explanation~~~
 	//Create a Die instance and copy to another Die variable.
 	Die instance;
 	instance.roll();
@@ -50,5 +60,7 @@ int main()
 	std::cout << "Instance 1 rolled_value = " << std::to_string(instance.rolled_value()) << std::endl;
 	std::cout << "Reference rolled_value = " << std::to_string(reference.rolled_value()) << std::endl;
 	//And this works both ways. Operations on the initial instance also affect the reference because they share the same memory space.
+	*/
+	
 	return 0;
 }
