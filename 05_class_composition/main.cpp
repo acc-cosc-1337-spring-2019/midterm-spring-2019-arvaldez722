@@ -19,7 +19,7 @@ int main()
 	//Create a vector of Roll
 	std::vector<Roll> roll;
 	//Create a 20iteration loop 
-	for (int i = 0; i > 20; ++i) {
+	for (int i = 0; i < 20; ++i) {
 
 		//and create a Roll instance, 
 		Roll r(d1, d2);
@@ -30,5 +30,6 @@ int main()
 		//and add to vector.
 		roll.push_back(r);
 	}
+
 	return 0;
 }

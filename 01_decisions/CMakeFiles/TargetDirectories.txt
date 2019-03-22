@@ -1,4 +1,0 @@
-C:/Users/april/source/repos/midterm-spring-2019-arvaldez722/01_decisions/CMakeFiles/dna_hamming_library.dir
-C:/Users/april/source/repos/midterm-spring-2019-arvaldez722/01_decisions/CMakeFiles/01_dna_hamming_exe.dir
-C:/Users/april/source/repos/midterm-spring-2019-arvaldez722/01_decisions/CMakeFiles/ALL_BUILD.dir
-C:/Users/april/source/repos/midterm-spring-2019-arvaldez722/01_decisions/CMakeFiles/ZERO_CHECK.dir

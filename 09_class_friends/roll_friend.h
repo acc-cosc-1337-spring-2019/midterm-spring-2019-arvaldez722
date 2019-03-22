@@ -1,10 +1,11 @@
 //class RollFriend interface
-#ifndef ROLL_H
-#define ROLL_H
+#ifndef ROLL_FRIEND_H
+#define ROLL_FRIEND_H
 //Roll class interface 
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 #include "die.h"
+
 class Roll
 {
 public:
@@ -14,16 +15,16 @@ public:
 	int value_1();
 	int value_2();
 
-	friend std::ostream & operator << (std::ostream & out, die1_rolled_value &d1, die2_rolled_value &d2)
-
+	friend std::ostream& operator << (std::ostream& os, const Roll& r);
 
 private:
-	Die& die1 : { };
-	Die& die2 :{};
-	int die1_roll_value;
-	int die2_roll_value;
+	Die& die1;
+	Die& die2;
+	int die1_rolled_value;
+	int die2_rolled_value;
 	bool rolled;
 	bool craps();
-	bool natural()
+	bool natural();
 };
+
 #endif

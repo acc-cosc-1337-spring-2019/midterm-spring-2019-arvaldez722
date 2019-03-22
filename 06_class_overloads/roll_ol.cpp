@@ -2,11 +2,13 @@
 #include "die.h"
 
 //roll class implementation
+
 Roll::Roll() : die1(), die2() {
 	die1_rolled_value = 0;
 	die2_rolled_value = 0;
 	rolled = false;
 }
+
 
 Roll::Roll(Die& d1, Die& d2) : die1(d1), die2(d2) {
 	die1_rolled_value = 0;
@@ -50,7 +52,7 @@ std::string Roll::result()
 	}
 	else if (natural())
 	{
-		return "Natrual";
+		return "Natural";
 	}
 	else
 	{

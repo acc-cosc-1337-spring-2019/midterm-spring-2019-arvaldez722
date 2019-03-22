@@ -31,7 +31,7 @@ std::string Roll::result()
 	}
 	else if (natural())
 	{
-		return "Natrual";
+		return "Natural";
 	}
 	else
 	{
