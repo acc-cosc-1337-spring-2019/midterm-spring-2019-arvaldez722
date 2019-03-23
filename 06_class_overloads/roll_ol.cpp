@@ -3,9 +3,11 @@
 
 //roll class implementation
 
-Roll::Roll() : die1(), die2() {
+//Type casting address 0 to a Die variable to make the compiler happy - probably not the best thing to do ...
+Roll::Roll() : die1((Die)0), die2((Die)0) {
 	die1_rolled_value = 0;
 	die2_rolled_value = 0;
+
 	rolled = false;
 }
 
@@ -18,14 +20,11 @@ Roll::Roll(Die& d1, Die& d2) : die1(d1), die2(d2) {
 
 void Roll::roll(Die& d1, Die& d2)
 {
-	die1 = d1;
-	die2 = d2;
+	d1.roll();
+	die1_rolled_value = d1.rolled_value();
 
-	die1.roll();
-	die1_rolled_value = die1.rolled_value();
-
-	die2.roll();
-	die2_rolled_value = die2.rolled_value();
+	d2.roll();
+	die2_rolled_value = d2.rolled_value();
 
 	rolled = true;
 }

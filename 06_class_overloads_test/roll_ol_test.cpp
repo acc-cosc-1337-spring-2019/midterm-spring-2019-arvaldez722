@@ -15,11 +15,13 @@ TEST_CASE("Overload Roll Test") {
 
 	Die d1;
 	Die d2;
-
+	bool testResult = false;
 	for (int i = 0; i < 20; ++i) {
 		Roll r;
 		r.roll(d1, d2);
+		testResult = (r.result() == "Craps" || r.result() == "Natural" || r.result() == "Points");
+		REQUIRE(testResult);
 	}
-	REQUIRE(r.result())
+
 
 }

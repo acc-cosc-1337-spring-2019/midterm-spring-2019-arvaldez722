@@ -4,18 +4,18 @@
 
 #include <vector>
 #include <iostream>
+#include "roll.h"
+#include "shooter.h"
 
-class Craps
-{
-public:
-	void play_game();
-	//overload<<operator --> vector of rolls
-
-	//overload >> operator --> user input number of shooters & number of vectors of shooters z
-	friend std::ostream & operator << (std::ostream & out, );
-	friend std::istream & operator >> (std::istream &in, );
+class Craps {
 private:
 	std::vector<Roll> rolls;
 	std::vector<Shooter> shooters;
+
+	friend std::ostream & operator << (std::ostream &os, const Craps &c);
+	friend std::istream & operator >> (std::istream &is, Craps &c);
+public:
+	void play_game();
+};
+
 #endif
-	

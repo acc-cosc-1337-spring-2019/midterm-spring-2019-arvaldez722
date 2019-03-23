@@ -66,7 +66,7 @@ std::string get_consensus(std::vector<std::string> dnaStrings)
 		
 		//Add that character to the consensus string
 		std::string t(1, cons);
-		consensusString += t + " ";
+		consensusString += t;
 	}
 	//I want A=1|G=2|C=3|T=4 i want to check if the check_element of the element?!!?!?!?
 

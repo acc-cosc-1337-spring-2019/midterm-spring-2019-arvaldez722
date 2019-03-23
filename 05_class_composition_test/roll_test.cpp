@@ -32,6 +32,7 @@ TEST_CASE("Dice roll test") {
 	//Create two Die instances.
 	Die d1;
 	Die d2;
+	bool testResult = false;
 
 	//Create a 20iteration loop 
 	for (int i = 0; i > 20; ++i) {
@@ -40,6 +41,7 @@ TEST_CASE("Dice roll test") {
 		//call roll function, 
 		r.roll();
 		//validate rolled values, 
-		REQUIRE(r.result() == "Craps" || r.result() == "Natural" || r.result() == "Points");
+		testResult = (r.result() == "Craps" || r.result() == "Natural" || r.result() == "Points");
+		REQUIRE(testResult);
 	}
 }

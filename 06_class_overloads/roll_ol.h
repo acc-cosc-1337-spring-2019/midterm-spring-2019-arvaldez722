@@ -26,4 +26,5 @@ private:
 	bool craps();
 	bool natural();
 
+};
 #endif // !ROLL_O_H

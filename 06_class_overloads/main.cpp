@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include "roll.h"
+#include "roll_ol.h"
 /*
 Create two Die instances.
 Create a vector of Roll
@@ -19,11 +19,12 @@ int main()
 	Die d2;
 	//Create a vector of Roll
 	std::vector<Roll> roll;
+
+	//and create a Roll instance, 
+	Roll r;
+
 	//Create a 20iteration loop 
 	for (int i = 0; i < 20; ++i) {
-
-		//and create a Roll instance, 
-		Roll r;
 		//call roll function, 
 		r.roll(d1, d2);
 		//output rolled values, 
